@@ -5,6 +5,7 @@
 	<!-- BEGIN metaTags -->
 	{function.buildMetaTag}
 	<!-- END metaTags -->
+	<meta property="wb:webmaster" content="401c1c478bb0faf5" />
 	<link rel="stylesheet" type="text/css" href="{relative_path}/stylesheet.css?{cache-buster}" />
 	<!-- BEGIN linkTags -->
 	<link<!-- IF linkTags.link --> link="{linkTags.link}"<!-- ENDIF linkTags.link --><!-- IF linkTags.rel --> rel="{linkTags.rel}"<!-- ENDIF linkTags.rel --><!-- IF linkTags.type --> type="{linkTags.type}"<!-- ENDIF linkTags.type --><!-- IF linkTags.href --> href="{linkTags.href}"<!-- ENDIF linkTags.href --> />
