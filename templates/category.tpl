@@ -24,10 +24,7 @@
 				<!-- IMPORT partials/category_tools.tpl -->
 
 				<div class="dropdown share-dropdown inline-block">
-					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-						[[topic:share]] <span class="caret"></span>
-					</button>
-
+				    <button class="btn btn-default dropdown-toggle weibo-share" data-toggle="dropdown" type="button""><i class="fa fa-weibo"></i><span class="hidden-xs-inline">分享</span></button>
 					<!-- IMPORT partials/share_dropdown.tpl -->
 				</div>
 			</span>

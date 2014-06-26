@@ -108,17 +108,6 @@
 											</a>
 										</li>
 										<!-- IF !config.disableSocialButtons -->
-										<li role="presentation" class="divider"></li>
-										<li role="presentation" class="dropdown-header">[[topic:share_this_post]]</li>
-										<li role="presentation">
-											<a role="menuitem" class="facebook-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-facebook"></i></span> Facebook</a>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" class="twitter-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-twitter"></i></span> Twitter</a>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" class="google-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-google-plus"></i></span> Google+</a>
-										</li>
 										<!-- ENDIF !config.disableSocialButtons -->
 										<li class="text-center">
 											<input type="text" id="post_{posts.pid}_link" value="" class="form-control post-link inline-block"></input>
@@ -160,6 +149,7 @@
 											<button class="btn btn-sm btn-link move" type="button" title="[[topic:move]]"><i class="fa fa-arrows"></i><span class="hidden-xs-inline"> [[topic:move]]</span></button>
 										<!-- ENDIF posts.display_move_tools -->
 									<!-- ENDIF posts.display_moderator_tools -->
+									<button class="btn btn-sm btn-link weibo-share" type="button""><i class="fa fa-weibo"></i><span class="hidden-xs-inline">分享</span></button>
 								</span>
 							</div>
 						</div>
