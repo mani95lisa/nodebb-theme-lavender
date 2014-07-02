@@ -115,6 +115,7 @@
 										</li>
 									</ul>
 								</div>
+								<!-- IF !reputation:disabled -->
 								&bull;
 								<a href="#" class="upvote <!-- IF posts.upvoted --> upvoted btn-primary <!-- ENDIF posts.upvoted -->">
 									<i class="fa fa-chevron-up"></i>
@@ -123,6 +124,7 @@
 								<a href="#" class="downvote <!-- IF posts.downvoted --> downvoted btn-primary <!-- ENDIF posts.downvoted -->">
 									<i class="fa fa-chevron-down"></i>
 								</a>
+								<!-- ENDIF !reputation:disabled -->
 
 								<!-- IF posts.user.custom_profile_info.length -->
 									<!-- BEGIN custom_profile_info -->
