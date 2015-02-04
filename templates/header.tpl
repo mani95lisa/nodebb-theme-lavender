@@ -19,6 +19,9 @@
 
 	<script>
 		var RELATIVE_PATH = "{relative_path}";
+		var config = JSON.parse('{configJSON}');
+		var app = {};
+		app.user = JSON.parse('{userJSON}');
 	</script>
 	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
 	<script>
@@ -28,8 +31,7 @@
 			urlArgs: "{cache-buster}",
 			paths: {
 				'forum': '../forum',
-				'vendor': '../../vendor',
-				'buzz': '../../vendor/buzz/buzz.min'
+				'vendor': '../../vendor'
 			}
 		});
 	</script>
