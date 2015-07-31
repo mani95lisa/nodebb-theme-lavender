@@ -19,39 +19,30 @@
 
 	<script>
 		var RELATIVE_PATH = "{relative_path}";
-		var config = JSON.parse('{configJSON}');
-		var app = {};
-		app.user = JSON.parse('{userJSON}');
+		var config = JSON.parse('{{configJSON}}');
+		var app = {
+			template: "{template.name}",
+			user: JSON.parse('{{userJSON}}')
+		};
 	</script>
 	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
-	<script>
-		require.config({
-			baseUrl: "{relative_path}/src/modules",
-			waitSeconds: 3,
-			urlArgs: "{cache-buster}",
-			paths: {
-				'forum': '../forum',
-				'vendor': '../../vendor'
-			}
-		});
-	</script>
+	<!-- IMPORT partials/requirejs-config.tpl -->
 
 	<!-- IF useCustomJS -->
-	{customJS}
+	{{customJS}}
 	<!-- ENDIF useCustomJS -->
 	<!-- IF useCustomCSS -->
-	<style type="text/css">{customCSS}</style>
+	<style type="text/css">{{customCSS}}</style>
 	<!-- ENDIF useCustomCSS -->
 
 </head>
 
 <body>
-	<div class="navbar navbar-default navbar-fixed-top header" role="navigation" id="header-menu">
+	<div class="navbar navbar-default navbar-fixed-top header" role="navigation" id="header-menu" component="navbar">
 		<div class="loading-bar"></div>
 		<div class="container">
 			<!-- IMPORT partials/menu.tpl -->
 		</div>
 	</div>
-
-	<div class="container" id="content">
+	<div class="container" id="content" component="content">
 	<!-- IMPORT partials/noscript/warning.tpl -->
